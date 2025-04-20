@@ -4,6 +4,7 @@ import "./App.css";
 import DocsPage from "./components/DocsPage";
 import FSCStatusIndicator from "./components/FSCStatusIndicator";
 import MoodletTest from "./components/MoodletTest";
+import Footer from "./components/Footer";
 
 /**
  * The main application component.
@@ -23,6 +24,7 @@ const App: React.FC = () => {
       <FSCStatusIndicator />
       <DocsPage />
       <MoodletTest />
+      <Footer />
     </>
   );
 };
