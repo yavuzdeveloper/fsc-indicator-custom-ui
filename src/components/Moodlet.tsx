@@ -106,9 +106,12 @@ const Moodlet: React.FC<MoodletProps> = ({
       case "icon":
         return (
           icon &&
-          React.cloneElement(icon as React.ReactElement, {
-            className: `${iconColor} w-4 h-4`,
-          })
+          React.cloneElement(
+            icon as React.ReactElement<React.SVGProps<SVGSVGElement>>,
+            {
+              className: `${iconColor} w-4 h-4`,
+            }
+          )
         );
       case "word":
         return <span className="truncate px-1">{text}</span>;
@@ -116,9 +119,12 @@ const Moodlet: React.FC<MoodletProps> = ({
         return (
           <>
             {icon &&
-              React.cloneElement(icon as React.ReactElement, {
-                className: `${iconColor} w-3 h-3`,
-              })}
+              React.cloneElement(
+                icon as React.ReactElement<React.SVGProps<SVGSVGElement>>,
+                {
+                  className: `${iconColor} w-3 h-3`,
+                }
+              )}
             {text && <span className="ml-[3px]">{text}</span>}
           </>
         );
@@ -127,9 +133,12 @@ const Moodlet: React.FC<MoodletProps> = ({
           <>
             {text && <span className="mr-[3px]">{text}</span>}
             {icon &&
-              React.cloneElement(icon as React.ReactElement, {
-                className: `${iconColor} w-3 h-3`,
-              })}
+              React.cloneElement(
+                icon as React.ReactElement<React.SVGProps<SVGSVGElement>>,
+                {
+                  className: `${iconColor} w-3 h-3`,
+                }
+              )}
           </>
         );
       default:
