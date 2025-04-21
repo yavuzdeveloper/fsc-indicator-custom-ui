@@ -28,7 +28,7 @@ const DropdownShowcase = () => {
         </button>
       </div>
 
-      <div className="flex gap-6 p-4">
+      <div className="flex gap-4 p-4">
         <DropdownMenu
           options={[
             { value: "opt1", label: "Option 1" },

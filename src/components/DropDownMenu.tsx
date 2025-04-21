@@ -65,7 +65,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({
       }
     : {
         button: "px-4 py-2 text-sm",
-        dropdown: "w-66",
+        dropdown: "w-45",
         option: "px-3 py-1.5 text-sm rounded-[8px]",
         icon: "w-4 h-4",
         gap: "gap-3",
